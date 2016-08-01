@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\platform-windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\obs-app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-interaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-properties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-outputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-source-select.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-scene-collections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-transitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-profiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-license-agreement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-status-bar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-adv-audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-preview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-namedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-log-reply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-projector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-remux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\properties-view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\focus-list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\menu-button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\double-slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\volume-control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\adv-audio-control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\item-widget-helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-checkbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\vertical-scroll-area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-item-widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\slider-absoluteset-style.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-list-widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\crash-report.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\hotkey-edit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\remote-text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\audio-encoders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-wrappers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs\buibanmoi\obs\qrc_obs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs\buibanmoi\obs\obs_automoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\obs-app.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\platform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-filters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-settings.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-interaction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-properties.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-outputs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-source-select.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-license-agreement.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-status-bar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-adv-audio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-preview.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-namedialog.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-log-reply.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-projector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-remux.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\properties-view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\properties-view.moc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\display-helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\double-slider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\focus-list.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\menu-button.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\mute-checkbox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\volume-control.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\adv-audio-control.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\item-widget-helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-checkbox.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\vertical-scroll-area.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-item-widget.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\slider-absoluteset-style.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-list-widget.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-display.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\crash-report.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\hotkey-edit.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-label.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\remote-text.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\audio-encoders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_NameDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSLicenseAgreement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSLogReply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicFilters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicSourceSelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicInteraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSRemux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\NameDialog.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLicenseAgreement.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLogReply.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasic.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicTransform.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicFilters.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSettings.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSourceSelect.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicInteraction.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSRemux.ui" />
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\obs.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F94A851F-8EDD-3417-9105-8B1C2E82945B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{31B5A5FC-3EC2-3174-9976-FE61DC70E3DC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

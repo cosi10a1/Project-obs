@@ -1,0 +1,113 @@
+﻿Build started 7/31/2016 7:43:36 PM.
+     1>Project "D:\obs\buibanmoi\obs\obs.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         setlocal
+         cd D:\obs\buibanmoi\obs
+         if %errorlevel% neq 0 goto :cmEnd
+         D:
+         if %errorlevel% neq 0 goto :cmEnd
+         "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/buibanmoi/obs/CMakeFiles/obs_automoc.dir/ Release
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWebKitWidgets /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWebKit /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtNetwork /I"D:\Qt\Qt5.3.2\Tools\QtCreator\bin\build-OBSlogin-Desktop_Qt_5_3_MSVC2013_64bit-Release" /ID:\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin /ID:\obs\buibanmoi\obs /I"C:\file obs\obs-studio-master\obs-studio-master\obs" /I"C:\file obs\obs-studio-master\obs-studio-master\libobs" /IC:\Tailieu\Android\dependencies2013\win64\include /ID:\obs\buibanmoi\config /I"C:\file obs\obs-studio-master\obs-studio-master\deps\libff\." /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore /I"D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013" /nologo /W4 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "DL_OPENGL=\"libobs-opengl.dll\"" /D "DL_D3D9=\"\"" /D "DL_D3D11=\"libobs-d3d11.dll\"" /D UNICODE /D _UNICODE /D HAVE_OBSCONFIG_H /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_NO_DEBUG /D "CMAKE_INTDIR=\"Release\"" /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"obs.dir\Release\\" /Fd"obs.dir\Release\vc120.pdb" /Gd /TP /wd4127 /wd4201 /errorReport:prompt ..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin\mainwindow.cpp
+         mainwindow.cpp
+     1>..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin\mainwindow.cpp(94): warning C4129: '/' : unrecognized character escape sequence
+     1>..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin\mainwindow.cpp(95): warning C4129: '/' : unrecognized character escape sequence
+     1>..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin\mainwindow.cpp(71): warning C4100: 'arg1' : unreferenced formal parameter
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\obs\buibanmoi\obs\Release\obs64.exe" /INCREMENTAL:NO /NOLOGO D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5WebKitWidgets.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5WebKit.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Widgets.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\libobs\Release\obs.lib ..\deps\libff\Release\libff.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Widgets.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\libcurl.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avcodec.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avfilter.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avdevice.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avutil.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swscale.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avformat.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swresample.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Gui.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Core.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\qtmain.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Network.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:/obs/buibanmoi/obs/Release/obs64.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/obs/buibanmoi/obs/Release/obs64.lib" /MACHINE:X64  /machine:x64 obs.dir\Release\obs.res
+         obs.dir\Release\moc_mainwindow.obj
+         obs.dir\Release\mainwindow.obj
+         "obs.dir\Release\platform-windows.obj"
+         "obs.dir\Release\obs-app.obj"
+         "obs.dir\Release\window-basic-main.obj"
+         "obs.dir\Release\window-basic-filters.obj"
+         "obs.dir\Release\window-basic-settings.obj"
+         "obs.dir\Release\window-basic-interaction.obj"
+         "obs.dir\Release\window-basic-properties.obj"
+         "obs.dir\Release\window-basic-main-outputs.obj"
+         "obs.dir\Release\window-basic-source-select.obj"
+         "obs.dir\Release\window-basic-main-scene-collections.obj"
+         "obs.dir\Release\window-basic-main-transitions.obj"
+         "obs.dir\Release\window-basic-main-profiles.obj"
+         "obs.dir\Release\window-license-agreement.obj"
+         "obs.dir\Release\window-basic-status-bar.obj"
+         "obs.dir\Release\window-basic-adv-audio.obj"
+         "obs.dir\Release\window-basic-transform.obj"
+         "obs.dir\Release\window-basic-preview.obj"
+         "obs.dir\Release\window-namedialog.obj"
+         "obs.dir\Release\window-log-reply.obj"
+         "obs.dir\Release\window-projector.obj"
+         "obs.dir\Release\window-remux.obj"
+         "obs.dir\Release\properties-view.obj"
+         "obs.dir\Release\focus-list.obj"
+         "obs.dir\Release\menu-button.obj"
+         "obs.dir\Release\double-slider.obj"
+         "obs.dir\Release\volume-control.obj"
+         "obs.dir\Release\adv-audio-control.obj"
+         "obs.dir\Release\item-widget-helpers.obj"
+         "obs.dir\Release\visibility-checkbox.obj"
+         "obs.dir\Release\vertical-scroll-area.obj"
+         "obs.dir\Release\visibility-item-widget.obj"
+         "obs.dir\Release\slider-absoluteset-style.obj"
+         "obs.dir\Release\source-list-widget.obj"
+         "obs.dir\Release\qt-display.obj"
+         "obs.dir\Release\crash-report.obj"
+         "obs.dir\Release\hotkey-edit.obj"
+         "obs.dir\Release\source-label.obj"
+         "obs.dir\Release\remote-text.obj"
+         "obs.dir\Release\audio-encoders.obj"
+         "obs.dir\Release\qt-wrappers.obj"
+         obs.dir\Release\qrc_obs.obj
+         obs.dir\Release\obs_automoc.obj
+         obs.vcxproj -> D:\obs\buibanmoi\obs\Release\obs64.exe
+       PostBuildEvent:
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -E copy D:/obs/buibanmoi/obs/Release/obs64.exe D:/obs/buibanmoi/rundir/Release/bin/64bit/obs64.exe
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/Release -DOUTPUT=D:/obs/buibanmoi/obs/pdbs -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/Release -DOUTPUT=D:/obs/buibanmoi/rundir/Release/bin/64bit -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/file obs/obs-studio-master/obs-studio-master/obs/data" D:/obs/buibanmoi/rundir/Release/data/obs-studio
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+     1>Done Building Project "D:\obs\buibanmoi\obs\obs.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.39

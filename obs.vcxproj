@@ -1,0 +1,1279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AA85CC3C-0E0C-3F18-BBD9-3A1088F7D3C9}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>obs</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt\Qt5.3.2\Tools\QtCreator\bin\build-OBSlogin-Desktop_Qt_5_3_MSVC2013_64bit-Release;D:\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin;D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;DEBUG=1;_DEBUG=1;_DEBUG;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;DEBUG=1;_DEBUG=1;_DEBUG;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target obs</Message>
+      <Command>setlocal
+cd D:\obs\buibanmoi\obs
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/buibanmoi/obs/CMakeFiles/obs_automoc.dir/ Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/obs/buibanmoi/obs/Debug/obs64.exe D:/obs/buibanmoi/rundir/Debug/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Debug -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/Debug -DOUTPUT=D:/obs/buibanmoi/obs/pdbs -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Debug -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/Debug -DOUTPUT=D:/obs/buibanmoi/rundir/Debug/bin/64bit -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/file obs/obs-studio-master/obs-studio-master/obs/data" D:/obs/buibanmoi/rundir/Debug/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\Debug\obs.lib;..\deps\libff\Debug\libff.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Widgetsd.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\libcurl.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avcodec.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avfilter.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avdevice.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avutil.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swscale.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avformat.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swresample.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Guid.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Cored.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\qtmaind.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/obs/buibanmoi/obs/Debug/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/buibanmoi/obs/Debug/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtWebKitWidgets;$(QTDIR)\include\QtWebKit;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtNetwork;D:\Qt\Qt5.3.2\Tools\QtCreator\bin\build-OBSlogin-Desktop_Qt_5_3_MSVC2013_64bit-Release;D:\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin;D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4201</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target obs</Message>
+      <Command>setlocal
+cd D:\obs\buibanmoi\obs
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/buibanmoi/obs/CMakeFiles/obs_automoc.dir/ Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/obs/buibanmoi/obs/Release/obs64.exe D:/obs/buibanmoi/rundir/Release/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/Release -DOUTPUT=D:/obs/buibanmoi/obs/pdbs -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/Release -DOUTPUT=D:/obs/buibanmoi/rundir/Release/bin/64bit -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/file obs/obs-studio-master/obs-studio-master/obs/data" D:/obs/buibanmoi/rundir/Release/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt5WebKitWidgets.lib;$(QTDIR)\lib\Qt5WebKit.lib;$(QTDIR)\lib\Qt5Widgets.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\Release\obs.lib;..\deps\libff\Release\libff.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Widgets.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\libcurl.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avcodec.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avfilter.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avdevice.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avutil.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swscale.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avformat.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swresample.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Gui.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Core.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\qtmain.lib;$(QTDIR)\lib\Qt5Network.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/obs/buibanmoi/obs/Release/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/buibanmoi/obs/Release/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4201</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target obs</Message>
+      <Command>setlocal
+cd D:\obs\buibanmoi\obs
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/buibanmoi/obs/CMakeFiles/obs_automoc.dir/ MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/obs/buibanmoi/obs/MinSizeRel/obs64.exe D:/obs/buibanmoi/rundir/MinSizeRel/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/MinSizeRel -DOUTPUT=D:/obs/buibanmoi/obs/pdbs -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/MinSizeRel -DOUTPUT=D:/obs/buibanmoi/rundir/MinSizeRel/bin/64bit -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/file obs/obs-studio-master/obs-studio-master/obs/data" D:/obs/buibanmoi/rundir/MinSizeRel/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\MinSizeRel\obs.lib;..\deps\libff\MinSizeRel\libff.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Widgets.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\libcurl.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avcodec.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avfilter.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avdevice.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avutil.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swscale.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avformat.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swresample.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Gui.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Core.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\qtmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/obs/buibanmoi/obs/MinSizeRel/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/buibanmoi/obs/MinSizeRel/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL="libobs-opengl.dll";DL_D3D9="";DL_D3D11="libobs-d3d11.dll";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";DL_D3D11=\"libobs-d3d11.dll\";UNICODE;_UNICODE;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs\buibanmoi\obs;C:\file obs\obs-studio-master\obs-studio-master\obs;C:\file obs\obs-studio-master\obs-studio-master\libobs;C:\Tailieu\Android\dependencies2013\win64\include;D:\obs\buibanmoi\config;C:\file obs\obs-studio-master\obs-studio-master\deps\libff\.;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE;D:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore;D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target obs</Message>
+      <Command>setlocal
+cd D:\obs\buibanmoi\obs
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/buibanmoi/obs/CMakeFiles/obs_automoc.dir/ RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/obs/buibanmoi/obs/RelWithDebInfo/obs64.exe D:/obs/buibanmoi/rundir/RelWithDebInfo/bin/64bit/obs64.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/RelWithDebInfo -DOUTPUT=D:/obs/buibanmoi/obs/pdbs -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DFNAME=obs64.exe -DINPUT=D:/obs/buibanmoi/obs/RelWithDebInfo -DOUTPUT=D:/obs/buibanmoi/rundir/RelWithDebInfo/bin/64bit -P "C:/file obs/obs-studio-master/obs-studio-master/cmake/copy_on_debug_helper.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/file obs/obs-studio-master/obs-studio-master/obs/data" D:/obs/buibanmoi/rundir/RelWithDebInfo/data/obs-studio
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\RelWithDebInfo\obs.lib;..\deps\libff\RelWithDebInfo\libff.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Widgets.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\libcurl.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avcodec.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avfilter.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avdevice.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avutil.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swscale.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avformat.lib;C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swresample.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Gui.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Core.lib;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\qtmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/obs/buibanmoi/obs/RelWithDebInfo/obs64.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/buibanmoi/obs/RelWithDebInfo/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/file obs/obs-studio-master/obs-studio-master" -BD:/obs/buibanmoi --check-stamp-file D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5Widgets_AccessibleFactory.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\cmake\Modules\FindLibcurl.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/file obs/obs-studio-master/obs-studio-master" -BD:/obs/buibanmoi --check-stamp-file D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5Widgets_AccessibleFactory.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\cmake\Modules\FindLibcurl.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/file obs/obs-studio-master/obs-studio-master" -BD:/obs/buibanmoi --check-stamp-file D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5Widgets_AccessibleFactory.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\cmake\Modules\FindLibcurl.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/file obs/obs-studio-master/obs-studio-master" -BD:/obs/buibanmoi --check-stamp-file D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5Widgets_AccessibleFactory.cmake;D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\cmake\Modules\FindLibcurl.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;C:\file obs\obs-studio-master\obs-studio-master\obs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\NameDialog.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_NameDialog.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_NameDialog.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_NameDialog.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_NameDialog.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_NameDialog.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/NameDialog.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\NameDialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_NameDialog.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLicenseAgreement.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLicenseAgreement.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLicenseAgreement.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLicenseAgreement.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSLicenseAgreement.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLicenseAgreement.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLicenseAgreement.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLicenseAgreement.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSLicenseAgreement.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLogReply.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLogReply.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLogReply.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLogReply.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSLogReply.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSLogReply.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSLogReply.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSLogReply.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSLogReply.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasic.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasic.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasic.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasic.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasic.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasic.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasic.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSBasic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicTransform.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicTransform.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicTransform.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicTransform.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicTransform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicTransform.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicTransform.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicTransform.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicTransform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicFilters.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicFilters.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicFilters.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicFilters.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicFilters.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicFilters.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicFilters.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicFilters.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicFilters.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSettings.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSettings.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSettings.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSettings.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicSettings.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSettings.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSettings.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSettings.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSettings.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSourceSelect.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSourceSelect.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSourceSelect.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSourceSelect.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicSourceSelect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicSourceSelect.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicSourceSelect.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicSourceSelect.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicSourceSelect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicInteraction.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicInteraction.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicInteraction.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicInteraction.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSBasicInteraction.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSBasicInteraction.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSBasicInteraction.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSBasicInteraction.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSBasicInteraction.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSRemux.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSRemux.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSRemux.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSRemux.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_OBSRemux.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\uic.exe -o D:/obs/buibanmoi/obs/ui_OBSRemux.h "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/OBSRemux.ui;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\OBSRemux.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\ui_OBSRemux.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\rcc.exe -name obs -o D:/obs/buibanmoi/obs/qrc_obs.cpp "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\mute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\unmute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\configuration21_16.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\invisible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\visible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\list_remove.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\add.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\down.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\editscene.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\live.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\properties.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\up.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\obs.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\advanced.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\video-display-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\decibel_audio_player.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\applications-system-2.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\system-settings-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network-bluetooth.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\obs\buibanmoi\obs\forms\obs.qrc.depends;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\buibanmoi\obs\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\rcc.exe -name obs -o D:/obs/buibanmoi/obs/qrc_obs.cpp "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\mute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\unmute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\configuration21_16.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\invisible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\visible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\list_remove.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\add.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\down.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\editscene.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\live.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\properties.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\up.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\obs.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\advanced.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\video-display-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\decibel_audio_player.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\applications-system-2.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\system-settings-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network-bluetooth.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\obs\buibanmoi\obs\forms\obs.qrc.depends;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\buibanmoi\obs\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\rcc.exe -name obs -o D:/obs/buibanmoi/obs/qrc_obs.cpp "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\mute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\unmute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\configuration21_16.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\invisible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\visible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\list_remove.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\add.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\down.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\editscene.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\live.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\properties.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\up.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\obs.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\advanced.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\video-display-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\decibel_audio_player.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\applications-system-2.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\system-settings-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network-bluetooth.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\obs\buibanmoi\obs\forms\obs.qrc.depends;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\buibanmoi\obs\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_obs.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Qt\Qt5.3.2\5.3\msvc2013_64\bin\rcc.exe -name obs -o D:/obs/buibanmoi/obs/qrc_obs.cpp "C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/file obs/obs-studio-master/obs-studio-master/obs/forms/obs.qrc;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\mute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\unmute.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\configuration21_16.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\invisible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\visible_mask.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\list_remove.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\add.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\down.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\editscene.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\live.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\properties.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\up.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\obs.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\advanced.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\video-display-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\decibel_audio_player.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\applications-system-2.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\system-settings-3.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\network-bluetooth.png;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\images\settings\preferences-desktop-keyboard-shortcuts.png;D:\obs\buibanmoi\obs\forms\obs.qrc.depends;C:\file obs\obs-studio-master\obs-studio-master\obs\forms\obs.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\buibanmoi\obs\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\build-OBSlogin-Desktop_Qt_5_3_MSVC2013_64bit-Release\ui_mainwindow.h" />
+    <ClInclude Include="..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin\mainwindow.h" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\obs-app.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\platform.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-main.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-filters.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-settings.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-interaction.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-properties.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-outputs.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-source-select.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-license-agreement.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-status-bar.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-adv-audio.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-transform.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-preview.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-namedialog.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-log-reply.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-projector.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-remux.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\properties-view.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\properties-view.moc.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\display-helpers.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\double-slider.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\focus-list.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\menu-button.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\mute-checkbox.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\volume-control.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\adv-audio-control.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\item-widget-helpers.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-checkbox.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\vertical-scroll-area.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-item-widget.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\slider-absoluteset-style.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-list-widget.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-display.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\crash-report.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\hotkey-edit.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-label.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\remote-text.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\audio-encoders.hpp" />
+    <ClInclude Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-wrappers.hpp" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_NameDialog.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSLicenseAgreement.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSLogReply.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasic.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicTransform.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicFilters.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicSettings.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicSourceSelect.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSBasicInteraction.h" />
+    <ClInclude Include="D:\obs\buibanmoi\obs\ui_OBSRemux.h" />
+    <ClCompile Include="..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\build-OBSlogin-Desktop_Qt_5_3_MSVC2013_64bit-Release\release\moc_mainwindow.cpp" />
+    <ClCompile Include="..\..\..\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin\mainwindow.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\platform-windows.cpp" />
+    <ResourceCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\obs.rc" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\obs-app.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-filters.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-settings.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-interaction.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-properties.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-outputs.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-source-select.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-scene-collections.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-transitions.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-profiles.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-license-agreement.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-status-bar.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-adv-audio.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-transform.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-preview.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-namedialog.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-log-reply.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-projector.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\window-remux.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\properties-view.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\focus-list.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\menu-button.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\double-slider.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\volume-control.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\adv-audio-control.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\item-widget-helpers.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-checkbox.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\vertical-scroll-area.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-item-widget.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\slider-absoluteset-style.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-list-widget.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-display.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\crash-report.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\hotkey-edit.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\source-label.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\remote-text.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\audio-encoders.cpp" />
+    <ClCompile Include="C:\file obs\obs-studio-master\obs-studio-master\obs\qt-wrappers.cpp" />
+    <ClCompile Include="D:\obs\buibanmoi\obs\qrc_obs.cpp" />
+    <ClCompile Include="D:\obs\buibanmoi\obs\obs_automoc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/obs/buibanmoi/ZERO_CHECK.vcxproj">
+      <Project>4E12BB43-E7FC-34F7-8CFD-5431DC7CDB82</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/buibanmoi/deps/libff/libff.vcxproj">
+      <Project>09F6052A-8FBC-3ADD-8600-E9A9ADA2A013</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/buibanmoi/libobs/libobs.vcxproj">
+      <Project>B8851B9B-B9D0-36E6-99E1-FF602850563E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

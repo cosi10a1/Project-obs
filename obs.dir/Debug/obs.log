@@ -1,0 +1,167 @@
+﻿Build started 7/31/2016 5:47:26 PM.
+     1>Project "D:\obs\buibanmoi\obs\obs.vcxproj" on node 3 (Build target(s)).
+     1>PreBuildEvent:
+         setlocal
+         cd D:\obs\buibanmoi\obs
+         if %errorlevel% neq 0 goto :cmEnd
+         D:
+         if %errorlevel% neq 0 goto :cmEnd
+         "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/buibanmoi/obs/CMakeFiles/obs_automoc.dir/ Debug
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+         Generating moc source moc_adv-audio-control.cpp
+         Generating moc source moc_crash-report.cpp
+         Generating moc source moc_double-slider.cpp
+         Generating moc source moc_focus-list.cpp
+         Generating moc source moc_hotkey-edit.cpp
+         Generating moc source moc_menu-button.cpp
+         Generating moc source moc_mute-checkbox.cpp
+         Generating moc source moc_obs-app.cpp
+         Generating moc source moc_properties-view.cpp
+         Generating moc source moc_properties-view.moc.cpp
+         Generating moc source moc_qt-display.cpp
+         Generating moc source moc_remote-text.cpp
+         Generating moc source moc_source-label.cpp
+         Generating moc source moc_source-list-widget.cpp
+         Generating moc source moc_vertical-scroll-area.cpp
+         Generating moc source moc_visibility-checkbox.cpp
+         Generating moc source moc_visibility-item-widget.cpp
+         Generating moc source moc_volume-control.cpp
+         Generating moc source moc_window-basic-adv-audio.cpp
+         Generating moc source moc_window-basic-filters.cpp
+         Generating moc source moc_window-basic-interaction.cpp
+         Generating moc source moc_window-basic-main.cpp
+         Generating moc source moc_window-basic-preview.cpp
+         Generating moc source moc_window-basic-properties.cpp
+         Generating moc source moc_window-basic-settings.cpp
+         Generating moc source moc_window-basic-source-select.cpp
+         Generating moc source moc_window-basic-status-bar.cpp
+         Generating moc source moc_window-basic-transform.cpp
+         Generating moc source moc_window-license-agreement.cpp
+         Generating moc source moc_window-log-reply.cpp
+         Generating moc source moc_window-main.cpp
+         Generating moc source moc_window-namedialog.cpp
+         Generating moc source moc_window-projector.cpp
+         Generating moc source moc_window-remux.cpp
+         Generating moc compilation obs_automoc.cpp
+       CustomBuild:
+         Building Custom Rule C:/file obs/obs-studio-master/obs-studio-master/obs/CMakeLists.txt
+         CMake does not need to re-run because D:\obs\buibanmoi\obs\CMakeFiles\generate.stamp is up-to-date.
+         Generating ui_NameDialog.h
+         Generating ui_OBSLicenseAgreement.h
+         Generating ui_OBSLogReply.h
+         Generating ui_OBSBasic.h
+         Generating ui_OBSBasicTransform.h
+         Generating ui_OBSBasicFilters.h
+         Generating ui_OBSBasicSettings.h
+         Generating ui_OBSBasicSourceSelect.h
+         Generating ui_OBSBasicInteraction.h
+         Generating ui_OBSRemux.h
+         Generating qrc_obs.cpp
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Qt\Qt5.3.2\Tools\QtCreator\bin\build-OBSlogin-Desktop_Qt_5_3_MSVC2013_64bit-Release" /ID:\Qt\Qt5.3.2\Tools\QtCreator\bin\OBSlogin /ID:\obs\buibanmoi\obs /I"C:\file obs\obs-studio-master\obs-studio-master\obs" /I"C:\file obs\obs-studio-master\obs-studio-master\libobs" /IC:\Tailieu\Android\dependencies2013\win64\include /ID:\obs\buibanmoi\config /I"C:\file obs\obs-studio-master\obs-studio-master\deps\libff\." /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore /I"D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013" /Zi /nologo /W4 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D DEBUG=1 /D _DEBUG=1 /D DEBUG=1 /D _DEBUG=1 /D _DEBUG /D "DL_OPENGL=\"libobs-opengl.dll\"" /D "DL_D3D9=\"\"" /D "DL_D3D11=\"libobs-d3d11.dll\"" /D UNICODE /D _UNICODE /D HAVE_OBSCONFIG_H /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D "CMAKE_INTDIR=\"Debug\"" /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"obs.dir\Debug\\" /Fd"obs.dir\Debug\vc120.pdb" /Gd /TP /wd4127 /wd4201 /errorReport:prompt "C:\file obs\obs-studio-master\obs-studio-master\obs\platform-windows.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\obs-app.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-filters.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-settings.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-interaction.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-properties.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-outputs.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-source-select.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-scene-collections.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-transitions.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-main-profiles.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-license-agreement.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-status-bar.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-adv-audio.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-transform.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-basic-preview.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-namedialog.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-log-reply.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-projector.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\window-remux.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\properties-view.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\focus-list.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\menu-button.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\double-slider.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\volume-control.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\adv-audio-control.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\item-widget-helpers.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-checkbox.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\vertical-scroll-area.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\visibility-item-widget.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\slider-absoluteset-style.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\source-list-widget.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\qt-display.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\crash-report.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\hotkey-edit.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\source-label.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\remote-text.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\audio-encoders.cpp" "C:\file obs\obs-studio-master\obs-studio-master\obs\qt-wrappers.cpp" D:\obs\buibanmoi\obs\qrc_obs.cpp D:\obs\buibanmoi\obs\obs_automoc.cpp
+         platform-windows.cpp
+         obs-app.cpp
+         window-basic-main.cpp
+         window-basic-filters.cpp
+         window-basic-settings.cpp
+         window-basic-interaction.cpp
+         window-basic-properties.cpp
+         window-basic-main-outputs.cpp
+         window-basic-source-select.cpp
+         window-basic-main-scene-collections.cpp
+         window-basic-main-transitions.cpp
+         window-basic-main-profiles.cpp
+         window-license-agreement.cpp
+         window-basic-status-bar.cpp
+         window-basic-adv-audio.cpp
+         window-basic-transform.cpp
+         window-basic-preview.cpp
+         window-namedialog.cpp
+         window-log-reply.cpp
+         window-projector.cpp
+         Generating Code...
+         Compiling...
+         window-remux.cpp
+         properties-view.cpp
+         focus-list.cpp
+         menu-button.cpp
+         double-slider.cpp
+         volume-control.cpp
+         adv-audio-control.cpp
+         item-widget-helpers.cpp
+         visibility-checkbox.cpp
+         vertical-scroll-area.cpp
+         visibility-item-widget.cpp
+         slider-absoluteset-style.cpp
+         source-list-widget.cpp
+         qt-display.cpp
+         crash-report.cpp
+         hotkey-edit.cpp
+         source-label.cpp
+         remote-text.cpp
+         audio-encoders.cpp
+         qt-wrappers.cpp
+         Generating Code...
+         Compiling...
+         qrc_obs.cpp
+         obs_automoc.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D WIN32 /D _WINDOWS /D DEBUG=1 /D _DEBUG=1 /D DEBUG=1 /D _DEBUG=1 /D _DEBUG /D "DL_OPENGL=\\\"libobs-opengl.dll\\\"" /D "DL_D3D9=\\\"\\\"" /D "DL_D3D11=\\\"libobs-d3d11.dll\\\"" /D UNICODE /D _UNICODE /D HAVE_OBSCONFIG_H /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D "CMAKE_INTDIR=\\\"Debug\\\"" /D _UNICODE /D UNICODE /l"0x0409" /ID:\obs\buibanmoi\obs /I"C:\file obs\obs-studio-master\obs-studio-master\obs" /I"C:\file obs\obs-studio-master\obs-studio-master\libobs" /IC:\Tailieu\Android\dependencies2013\win64\include /ID:\obs\buibanmoi\config /I"C:\file obs\obs-studio-master\obs-studio-master\deps\libff\." /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtWidgets /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtGui /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtANGLE /ID:\Qt\Qt5.3.2\5.3\msvc2013_64\include\QtCore /I"D:\Qt\Qt5.3.2\5.3\msvc2013_64\mkspecs\win32-msvc2013" /nologo /fo"obs.dir\Debug\obs.res" "C:\file obs\obs-studio-master\obs-studio-master\obs\obs.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\obs\buibanmoi\obs\Debug\obs64.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\libobs\Debug\obs.lib ..\deps\libff\Debug\libff.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Widgetsd.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\libcurl.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avcodec.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avfilter.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avdevice.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avutil.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swscale.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\avformat.lib C:\Tailieu\Android\dependencies2013\win64\include\..\bin\swresample.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Guid.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\Qt5Cored.lib D:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\qtmaind.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/obs/buibanmoi/obs/Debug/obs64.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/obs/buibanmoi/obs/Debug/obs64.lib" /MACHINE:X64  /machine:x64 obs.dir\Debug\obs.res
+         "obs.dir\Debug\platform-windows.obj"
+         "obs.dir\Debug\obs-app.obj"
+         "obs.dir\Debug\window-basic-main.obj"
+         "obs.dir\Debug\window-basic-filters.obj"
+         "obs.dir\Debug\window-basic-settings.obj"
+         "obs.dir\Debug\window-basic-interaction.obj"
+         "obs.dir\Debug\window-basic-properties.obj"
+         "obs.dir\Debug\window-basic-main-outputs.obj"
+         "obs.dir\Debug\window-basic-source-select.obj"
+         "obs.dir\Debug\window-basic-main-scene-collections.obj"
+         "obs.dir\Debug\window-basic-main-transitions.obj"
+         "obs.dir\Debug\window-basic-main-profiles.obj"
+         "obs.dir\Debug\window-license-agreement.obj"
+         "obs.dir\Debug\window-basic-status-bar.obj"
+         "obs.dir\Debug\window-basic-adv-audio.obj"
+         "obs.dir\Debug\window-basic-transform.obj"
+         "obs.dir\Debug\window-basic-preview.obj"
+         "obs.dir\Debug\window-namedialog.obj"
+         "obs.dir\Debug\window-log-reply.obj"
+         "obs.dir\Debug\window-projector.obj"
+         "obs.dir\Debug\window-remux.obj"
+         "obs.dir\Debug\properties-view.obj"
+         "obs.dir\Debug\focus-list.obj"
+         "obs.dir\Debug\menu-button.obj"
+         "obs.dir\Debug\double-slider.obj"
+         "obs.dir\Debug\volume-control.obj"
+         "obs.dir\Debug\adv-audio-control.obj"
+         "obs.dir\Debug\item-widget-helpers.obj"
+         "obs.dir\Debug\visibility-checkbox.obj"
+         "obs.dir\Debug\vertical-scroll-area.obj"
+         "obs.dir\Debug\visibility-item-widget.obj"
+         "obs.dir\Debug\slider-absoluteset-style.obj"
+         "obs.dir\Debug\source-list-widget.obj"
+         "obs.dir\Debug\qt-display.obj"
+         "obs.dir\Debug\crash-report.obj"
+         "obs.dir\Debug\hotkey-edit.obj"
+         "obs.dir\Debug\source-label.obj"
+         "obs.dir\Debug\remote-text.obj"
+         "obs.dir\Debug\audio-encoders.obj"
+         "obs.dir\Debug\qt-wrappers.obj"
+         obs.dir\Debug\qrc_obs.obj
+         obs.dir\Debug\obs_automoc.obj
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(607,5): error MSB6006: "link.exe" exited with code 1.
+     1>Done Building Project "D:\obs\buibanmoi\obs\obs.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:02:44.72
